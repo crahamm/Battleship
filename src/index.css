@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  margin: 0 1em 0.5em 0;
+  font-size: 1em;
+}
+
+#app {
+  width: 80vw;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #eee;
+  border-radius: 1em;
+}
+
+#game-view {
+  display: flex;
+}
+
+.gameboard {
+  display: flex;
+  margin: 0 2em 0 0;
+  width: 50%;
+}
+
+.board-col {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.header-cell {
+  font-weight: bold;
+}
+
+.empty-cell {
+  background-color: white;
+  border: 1px solid black;
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  line-height: 1.25em;
+}
+
+.empty-ai-cell {
+  background-color: white;
+  border: 1px solid black;
+  width: 1.25em;
+  height: 1.25em;
+  text-align: center;
+  line-height: 1.25em;
+}
+
+.missed-cell {
+  font-style: italic;
+}
+
+.ship-cell {
+  background-color: darkslategrey;
+}
+
+.hit-cell {
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+}
+
+#game-console {
+  width: 100%;
+}
+
+#game-output-text {
+  width: 95%;
+  height: 10em;
+  resize: none;
+  color: black;
+}
+
+#game-controls-reset {
+  margin: 1em 0 0 0;
+}
